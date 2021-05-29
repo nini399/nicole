@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 
- <head>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
 
     <title>My Profile</title>
@@ -7,6 +9,54 @@
     <meta name="author" content="SitePoint" />
 
     <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <style>
+      nav {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(201, 201, 201);
+      }
+      ul {
+        list-style-type: none;
+      }
+      li{
+          display: inline;
+          float: right;
+          margin: 5px;
+      }
+      .columna {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        }
+      .cover{
+          background-image: url('cover.jpeg'); background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 300px;
+          text-align: center;
+      }
+      #profile-img{
+        margin-top: 150px;
+      }
+      #profile-content{
+          margin-top: 80px;
+      }
+      .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+        .video{
+            width:320px;
+            height:240px;
+            margin: 50px;
+        }
+    </style>
   </head>
 
   <body>
@@ -31,20 +81,25 @@
           decirte que soy una joven que ama la technologia aunque a veces no
           entiendo mucho pero siempre me gusta preguntar. Entre mis objetivos se
           encuentra ser la mejor ingeniero en mi rubro.
-        </p> 
-        <label class= "importante" he estado en las clases de Git</label>
-        
+        </p>
       </div>
     </section>
     <section id="estudios">
         <div class="columna">
             <h3>Mis Estudios</h3>
-          <label class= "importante"> hoy es un gran día </label>
+            <div>
+                <label for=""> <b>Primaria:</b> 01-22-1999 hasta 11-11-2006</label>
+                <p>La escuela la realize en la academia x, mi promedio fue: x</p>
+            </div>
+            <div>
+                <label for=""> <b>Secundaria: </b> 01-22-1999 hasta 11-11-2006</label>
+                <p>La escuela la realize en la academia x</p>
+            </div>
         </div>
     </section>
     <section id="habilidades">
         <div class="columna">
-            <h3 class= "importante"> Mis habilidades</h3>
+            <h3> Mis habilidades</h3>
             <div>
                 <label for=""> Aprendo por mi misma:</label>
                 <p>Me gusta aprender po mi propia cuenta, de hecho ahorita estoy tomando unos cursos con..</p>
@@ -70,3 +125,5 @@
       </div>
     <script src="js/scripts.js"></script>
   </body>
+
+</html>
